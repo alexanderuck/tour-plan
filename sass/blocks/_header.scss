@@ -1,34 +1,89 @@
-// .header {
+.header {
+    background-color: #fff;
 
-//     &__container {}
-// }
+    &-top {
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-// .header-top {}
+    &__search {
+        margin-right: auto;
+        margin-left: 108px;
+    }
+}
 
-// .logo {
+.search {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    height: 40px;
+    &__input {
+        width: 350px;
+        height: 100%;
+        padding-left: 23px;
+        padding-right: 75px;
+        background-color: #f5fafe;
+        font-size: 12px;
+        line-height: 15;
+        color: $text-color;
 
-//     &__image {}
-// }
+        &::placeholder {
+            color: $text-color;
+        }
+    }
 
-// .search {
+    &__button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 65px;
+        background: $primary;
+        cursor: pointer;
+    }
+}
 
-//     &__input {}
+.user {
+    display: flex;
+    align-items: center;
 
-//     &__button {}
-// }
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
-// .user {
+    &__name {
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 18px;
+        color: $text-color;
+    }
+}
 
-//     &__avatar {}
+.header-menu {
+    background: #0a223d;
 
-//     &__name {}
-// }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 31px 0;
+    }
 
-// .header-menu {
+    &__item {
+    }
 
-//     &__list {}
-
-//     &__item {}
-
-//     &__link {}
-// }
+    &__link {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
